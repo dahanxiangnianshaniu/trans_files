@@ -10,6 +10,9 @@
 4. 审计概述表4字段完整性
 5. 降级模式标注检查
 6. △轻重标注检查
+7. 留存期合规性深度检查章节检查
+8. 4D检查结果与最终判定一致性
+9. 格式合规检查第5项（设备供应者模式）
 """
 
 import sys
@@ -33,21 +36,40 @@ MODE1_REQUIRED_SECTIONS = [
     "#### 3.2.1 ✗缺失项",
     "#### 3.2.2 △模糊项",
     "### 3.3 非个人数据识别",
-    "## 四、第三方SDK/共享信息检查",
-    "## 五、附录",
+    "## 四、留存期合规性深度检查",
+    "### 4.0 数据源定位",
+    "### 4.1 留存期完整性校验",
+    "### 4.2 留存期上限合规校验",
+    "### 4.3 留存期对外一致性校验",
+    "## 五、第三方SDK/共享信息检查",
+    "## 六、附录",
     "### 审计范围",
     "### 审计说明",
     "### 文档质量异常",
 ]
 
-MODE2_EXTRA_SECTIONS = [
-    "## 四、格式合规性检查",
-    "### 4.1 分类结构",
-    "### 4.2 边界清晰",
-    "### 4.3 数据来源标注",
-    "### 4.4 版本与修订记录",
-    "## 五、第三方SDK/共享信息检查",
+MODE2_REQUIRED_SECTIONS = [
+    "# 个人数据说明合规检测报告",
+    "## 审计概述",
+    "## 审计结论",
+    "## 一、文档发现",
+    "## 二、内容提取",
+    "### 2.1 数据来源结构",
+    "### 2.2 空值检测",
+    "## 三、四要素完整性检查",
+    "### 3.1 四要素矩阵",
+    "### 3.2 缺失项详细说明",
+    "#### 3.2.1 ✗缺失项",
+    "#### 3.2.2 △模糊项",
+    "### 3.3 非个人数据识别",
+    "## 四、留存期合规性深度检查",
+    "### 4.0 数据源定位",
+    "### 4.4 删除能力存在性校验",
+    "## 五、格式合规性检查",
     "## 六、附录",
+    "### 审计范围",
+    "### 审计说明",
+    "### 文档质量异常",
 ]
 
 STANDARD_8_GROUPS = [
@@ -67,11 +89,7 @@ OVERVIEW_FIELDS = ["审计条目", "检查模式", "审计结论", "审计日期
 def validate_sections(content, mode):
     """校验章节结构完整性"""
     issues = []
-    required = MODE1_REQUIRED_SECTIONS[:]
-    if mode == 2:
-        # 模式二有额外的格式合规检查章节，附录编号变为六
-        required = [s for s in required if not s.startswith("## 四") and not s.startswith("## 五")]
-        required += MODE2_EXTRA_SECTIONS
+    required = MODE1_REQUIRED_SECTIONS if mode == 1 else MODE2_REQUIRED_SECTIONS
 
     for section in required:
         if section not in content:
@@ -140,7 +158,7 @@ def validate_statistics(content):
 
 
 def validate_33_groups(content):
-    """校验3.3节8组全覆盖"""
+    """校验3.3节8组全覆盖和5列结构"""
     issues = []
     # 提取3.3节内容
     section_33_match = re.search(r"### 3\.3 非个人数据识别.*?(?=\n## |\Z)", content, re.DOTALL)
@@ -166,6 +184,18 @@ def validate_33_groups(content):
     has_3questions = any(q in section_33 for q in ["直接识别", "间接识别", "用户行为"])
     if not has_3questions:
         issues.append("[3.3] 边界组缺少3问题讨论（①能否直接识别？②能否间接识别？③是否关联用户行为？）")
+
+    # 检查3.3节表格是否使用5列结构（组别/本文涉及的数据项/判定/理由/位置）
+    table_rows = re.findall(r"\|[^|\n]+\|[^|\n]+\|[^|\n]+\|[^|\n]+\|[^|\n]+\|", section_33)
+    has_5col = False
+    if table_rows:
+        for row in table_rows:
+            cells = [c.strip() for c in row.split("|") if c.strip()]
+            if len(cells) >= 5 and any(g in cells[0] for g in STANDARD_8_GROUPS):
+                has_5col = True
+                break
+    if not has_5col:
+        issues.append("[3.3] 表格应使用5列结构（组别/本文涉及的数据项/判定/理由/位置），而非4列结构")
 
     return issues
 
@@ -209,10 +239,9 @@ def validate_delta_weight(content):
     return issues
 
 
-def validate_conclusion_consistency(content):
+def validate_conclusion_consistency(content, mode):
     """校验审计结论与统计数字一致性"""
     issues = []
-    # 提取审计结论
     conclusion_match = re.search(r"\|\s*审计结论\s*\|\s*\*?\*?(PASS|FAIL|WARNING)\*?\*?\s*\|", content)
     if not conclusion_match:
         issues.append("[审计结论] 未找到审计结论字段")
@@ -220,7 +249,6 @@ def validate_conclusion_consistency(content):
 
     conclusion = conclusion_match.group(1)
 
-    # 提取统计数字
     stat_match = re.search(
         r"\*\*四要素状态统计\*\*.*?\|.*?\n\s*\|.*?\n\s*\|\s*✓\s*合规.*?\n\s*\|\s*△\s*模糊.*?\n\s*\|\s*✗\s*不合规.*?\n",
         content, re.DOTALL
@@ -236,11 +264,144 @@ def validate_conclusion_consistency(content):
             if conclusion == "PASS" and (fail_count > 0 or warn_count > 0):
                 issues.append(f"[结论不一致] 审计结论为PASS但存在{fail_count}项✗和{warn_count}项△")
             elif conclusion == "FAIL" and fail_count == 0:
-                issues.append(f"[结论不一致] 审计结论为FAIL但✗项为0（应为WARNING）")
+                has_4d_fail = bool(re.search(r"超上限条目\s*\|\s*[1-9]\d*条", content))
+                has_4d1_fail = bool(re.search(r"留存期缺失条目\s*\|\s*[1-9]\d*条", content))
+                has_4d3_fail = bool(re.search(r"不一致条目\s*\|\s*[1-9]\d*条", content)) or bool(re.search(r"遗漏条目\s*\|\s*[1-9]\d*条", content))
+                if mode == 1:
+                    if not (has_4d_fail or has_4d1_fail or has_4d3_fail):
+                        issues.append(f"[结论不一致] 审计结论为FAIL但四要素✗项为0且4D无FAIL条目（应为WARNING）")
+                elif mode == 2:
+                    has_format_x = False
+                    has_4d4_x = False
+                    format_section = re.search(r"## 五、格式合规性检查.*?(?=\n## |\Z)", content, re.DOTALL)
+                    if format_section:
+                        has_format_x = bool(re.search(r"\|\s*✗\s*\|", format_section.group()))
+                    has_4d4_x = bool(re.search(r"删除能力描述\s*\|\s*✗", content))
+                    if not has_format_x and not has_4d4_x:
+                        issues.append(f"[结论不一致] 审计结论为FAIL但四要素✗项为0且格式合规和4D-4均无✗（应为WARNING）")
             elif conclusion == "WARNING" and fail_count > 0:
                 issues.append(f"[结论不一致] 审计结论为WARNING但存在{fail_count}项✗（应为FAIL）")
         except ValueError:
             pass
+    return issues
+
+
+def validate_4d_chapters(content, mode):
+    """校验留存期合规性深度检查章节"""
+    issues = []
+    if "留存期合规性深度检查" not in content:
+        issues.append("[4D] 留存期合规性深度检查章节不存在")
+        return issues
+
+    if "4.0 数据源定位" not in content:
+        issues.append("[4D] 数据源定位子节不存在")
+
+    if mode == 1:
+        for sub in ["4.1 留存期完整性校验", "4.2 留存期上限合规校验", "4.3 留存期对外一致性校验"]:
+            if sub not in content:
+                issues.append(f"[4D] 数据控制者模式下缺少子节: {sub}")
+    elif mode == 2:
+        if "4.4 删除能力存在性校验" not in content:
+            issues.append("[4D] 设备供应者模式下缺少4.4删除能力存在性校验子节")
+
+    return issues
+
+
+def validate_4d_conclusion_consistency(content, mode):
+    """校验4D检查结果与最终判定一致性"""
+    issues = []
+    conclusion_match = re.search(r"\|\s*审计结论\s*\|\s*\*?\*?(PASS|FAIL|WARNING)\*?\*?\s*\|", content)
+    if not conclusion_match:
+        return issues
+    conclusion = conclusion_match.group(1)
+
+    if mode == 1:
+        if "FAIL" in content and "留存期" in content:
+            if conclusion == "PASS":
+                issues.append("[4D结论不一致] 4D有FAIL但审计结论为PASS")
+            if conclusion == "WARNING":
+                has_4d_fail = bool(re.search(r"超上限条目\s*\|\s*[1-9]\d*条", content))
+                has_4d1_fail = bool(re.search(r"留存期缺失条目\s*\|\s*[1-9]\d*条", content))
+                has_4d3_fail = bool(re.search(r"不一致条目\s*\|\s*[1-9]\d*条", content)) or bool(re.search(r"遗漏条目\s*\|\s*[1-9]\d*条", content))
+                if has_4d_fail or has_4d1_fail or has_4d3_fail:
+                    issues.append("[4D结论不一致] 4D有FAIL条目（超上限/缺失/不一致/遗漏）但审计结论为WARNING（应为FAIL）")
+        if "⊘" in content and "留存期" in content:
+            if conclusion == "PASS":
+                issues.append("[4D结论不一致] 4D有⊘但审计结论为PASS（应为WARNING）")
+    elif mode == 2:
+        has_4d4_x = bool(re.search(r"删除能力描述\s*\|\s*✗", content))
+        has_format_x = False
+        format_section = re.search(r"## 五、格式合规性检查.*?(?=\n## |\Z)", content, re.DOTALL)
+        if format_section:
+            has_format_x = bool(re.search(r"\|\s*✗\s*\|", format_section.group()))
+
+        if conclusion == "PASS":
+            if has_4d4_x:
+                issues.append("[4D结论不一致] 4D-4为✗但审计结论为PASS（应为FAIL）")
+            if has_format_x:
+                issues.append("[4D结论不一致] 格式合规有✗但审计结论为PASS（应为FAIL）")
+        if conclusion == "WARNING":
+            stat_match = re.search(
+                r"\*\*四要素状态统计\*\*.*?\|.*?\n\s*\|.*?\n\s*\|\s*✓\s*合规.*?\n\s*\|\s*△\s*模糊.*?\n\s*\|\s*✗\s*不合规.*?\n",
+                content, re.DOTALL
+            )
+            if stat_match:
+                numbers = re.findall(r"\|\s*(\d+)\s*项?\s*\|", stat_match.group())
+                if len(numbers) >= 3:
+                    fail_count = int(numbers[2])
+                    if fail_count > 0:
+                        issues.append("[4D结论不一致] 审计结论为WARNING但四要素有✗（应为FAIL）")
+            if has_format_x:
+                issues.append("[4D结论不一致] 审计结论为WARNING但格式合规有✗（应为FAIL）")
+            if has_4d4_x:
+                issues.append("[4D结论不一致] 审计结论为WARNING但4D-4为✗（应为FAIL）")
+
+    return issues
+
+
+def validate_format_compliance_item5(content, mode):
+    """校验格式合规检查第5项（设备供应者模式）"""
+    issues = []
+    if mode == 2:
+        format_section = re.search(r"## 五、格式合规性检查.*?(?=\n## |\Z)", content, re.DOTALL)
+        if not format_section:
+            format_section = re.search(r"## 四、格式合规性检查.*?(?=\n## |\Z)", content, re.DOTALL)
+        if format_section:
+            section_text = format_section.group()
+            if "删除/匿名化能力" not in section_text:
+                issues.append("[格式合规] 设备供应者模式格式合规检查缺少第5项'删除/匿名化能力'")
+            if "4.4节" not in section_text and "第四章4.4节" not in section_text:
+                issues.append("[格式合规] 删除能力检查项应引用第四章4.4节结果")
+    return issues
+
+
+def validate_distribution_table(content):
+    """校验各要素判定分布表是否存在"""
+    issues = []
+    if "各要素判定分布" not in content:
+        issues.append("[分布表] 缺少'各要素判定分布'表——SKILL.md要求两套统计必须分两个表呈现")
+    else:
+        for element in ["类型描述", "目的", "处理方式", "存留期限"]:
+            if element not in content:
+                issues.append(f"[分布表] 各要素判定分布表缺少要素'{element}'")
+    return issues
+
+
+def validate_di_consistency(content):
+    """校验4D子节中DI清单定位信息与第二章数据来源的DI清单信息一致性"""
+    issues = []
+    section_4_0 = re.search(r"### 4\.0 数据源定位.*?(?=\n### |\n## |\Z)", content, re.DOTALL)
+    if not section_4_0:
+        return issues
+
+    di_in_4d = re.search(r"\|\s*DI清单\s*\|\s*找到/⊘\s*\|\s*([^|]+)\s*\|", section_4_0.group())
+    if di_in_4d:
+        di_path_4d = di_in_4d.group(1).strip()
+        if di_path_4d and di_path_4d != "⊘原因":
+            section_2 = re.search(r"## 二.*?数据来源结构.*?(?=\n### |\n## |\Z)", content, re.DOTALL)
+            if section_2:
+                if di_path_4d not in section_2.group():
+                    issues.append(f"[DI一致性] 4D数据源定位中的DI清单路径'{di_path_4d}'与第二章数据来源不一致")
     return issues
 
 
@@ -266,10 +427,15 @@ def main():
     all_issues.extend(validate_sections(content, args.mode))
     all_issues.extend(validate_overview(content))
     all_issues.extend(validate_statistics(content))
+    all_issues.extend(validate_distribution_table(content))
     all_issues.extend(validate_33_groups(content))
     all_issues.extend(validate_degradation(content))
     all_issues.extend(validate_delta_weight(content))
-    all_issues.extend(validate_conclusion_consistency(content))
+    all_issues.extend(validate_conclusion_consistency(content, args.mode))
+    all_issues.extend(validate_4d_chapters(content, args.mode))
+    all_issues.extend(validate_4d_conclusion_consistency(content, args.mode))
+    all_issues.extend(validate_format_compliance_item5(content, args.mode))
+    all_issues.extend(validate_di_consistency(content))
 
     if all_issues:
         print(f"\n发现 {len(all_issues)} 个问题：\n")
