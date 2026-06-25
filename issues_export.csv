@@ -1,0 +1,145 @@
+number,title,state,labels,assignees,createdAt,updatedAt,url
+151,搭建condex中转服务,OPEN,,fyf-code,2026-06-16T09:45:09Z,2026-06-24T09:24:09Z,https://github.com/cxm95/Yanji-Kanban/issues/151
+150,搭建Codex中转服务,OPEN,,,2026-06-16T09:44:20Z,2026-06-16T09:44:20Z,https://github.com/cxm95/Yanji-Kanban/issues/150
+149,绿区H100部署GLM-5.1-555B-W4A16模型,OPEN,,yangjun414,2026-06-10T09:32:50Z,2026-06-15T09:18:28Z,https://github.com/cxm95/Yanji-Kanban/issues/149
+148,调用链断裂场景验证,OPEN,,fyf-code,2026-06-10T08:40:29Z,2026-06-18T09:14:19Z,https://github.com/cxm95/Yanji-Kanban/issues/148
+147,红线条目用opencode方式实现,CLOSED,,hxb123456,2026-06-08T08:05:04Z,2026-06-24T09:29:50Z,https://github.com/cxm95/Yanji-Kanban/issues/147
+146,分析评估知识图谱类开源项目,OPEN,,fyf-code,2026-06-08T02:45:49Z,2026-06-10T02:50:33Z,https://github.com/cxm95/Yanji-Kanban/issues/146
+145,本地搭建AgentFL,OPEN,,fyf-code,2026-06-05T08:56:00Z,2026-06-05T09:23:42Z,https://github.com/cxm95/Yanji-Kanban/issues/145
+144,红线条目进展跟踪,OPEN,,pegasus-l,2026-06-05T02:03:19Z,2026-06-24T07:34:14Z,https://github.com/cxm95/Yanji-Kanban/issues/144
+143,蓝区复现Autogenesis，反馈结果,CLOSED,,hxb123456,2026-06-01T12:13:55Z,2026-06-03T10:05:39Z,https://github.com/cxm95/Yanji-Kanban/issues/143
+142,蓝区复现OpenAnt，反馈结果,CLOSED,,hxb123456,2026-05-29T09:20:20Z,2026-06-04T07:39:23Z,https://github.com/cxm95/Yanji-Kanban/issues/142
+141,编写固件解包提示词，使Agent能够准确完成固件解包,OPEN,,Rocky0102;fyf-code,2026-05-29T08:48:46Z,2026-05-29T08:57:50Z,https://github.com/cxm95/Yanji-Kanban/issues/141
+140,Agenflow扫描django项目,CLOSED,,fyf-code,2026-05-26T11:31:35Z,2026-06-03T10:00:56Z,https://github.com/cxm95/Yanji-Kanban/issues/140
+139,红线条目用opencode方式实现,OPEN,,dahanxiangnianshaniu,2026-05-26T10:03:29Z,2026-06-24T08:58:24Z,https://github.com/cxm95/Yanji-Kanban/issues/139
+138,蓝区开源项目/二进制镜像等跟踪智能体,OPEN,,yangjun414,2026-05-26T07:32:14Z,2026-06-24T10:09:51Z,https://github.com/cxm95/Yanji-Kanban/issues/138
+137,漏洞素材收集数据工程,OPEN,,cxm95;crawlerwolf,2026-05-25T02:10:20Z,2026-06-24T10:02:26Z,https://github.com/cxm95/Yanji-Kanban/issues/137
+136,对比semble、codegraph、graphify、Understand-Anything，并验证效果,OPEN,,pegasus-l;hxb123456,2026-05-22T06:44:12Z,2026-06-08T02:55:31Z,https://github.com/cxm95/Yanji-Kanban/issues/136
+135,蓝区复现skills-vote,CLOSED,,hxb123456,2026-05-21T08:53:54Z,2026-05-22T09:30:19Z,https://github.com/cxm95/Yanji-Kanban/issues/135
+134,蓝区验证SkillClaw并反馈结果,CLOSED,,hxb123456,2026-05-12T09:41:47Z,2026-05-18T09:30:14Z,https://github.com/cxm95/Yanji-Kanban/issues/134
+133,蓝区部署验证Skills-Coach并反馈结果,CLOSED,,pegasus-l;hxb123456,2026-05-11T10:22:43Z,2026-05-27T10:04:25Z,https://github.com/cxm95/Yanji-Kanban/issues/133
+132,蓝区验证HeavySkill并反馈结果,CLOSED,,hxb123456,2026-05-11T08:58:35Z,2026-05-13T10:00:27Z,https://github.com/cxm95/Yanji-Kanban/issues/132
+131,测试219模型的智能体编程/工具调用能力,CLOSED,,cxm95;yangjun414,2026-05-09T10:15:32Z,2026-05-29T10:18:38Z,https://github.com/cxm95/Yanji-Kanban/issues/131
+130,蓝区部署codexstar69/bug-hunter项目,CLOSED,,hxb123456,2026-05-09T06:39:39Z,2026-05-12T07:14:20Z,https://github.com/cxm95/Yanji-Kanban/issues/130
+129,JAVA WEB漏挖Agent开发,OPEN,,Chengxin-Xu,2026-05-08T03:14:50Z,2026-06-16T01:31:24Z,https://github.com/cxm95/Yanji-Kanban/issues/129
+128,litellm配置,CLOSED,,yangjun414,2026-05-07T10:22:49Z,2026-05-09T10:09:19Z,https://github.com/cxm95/Yanji-Kanban/issues/128
+127,攻击模式转skill或memory,OPEN,,TongXi-Simon,2026-05-07T10:16:51Z,2026-05-07T10:16:51Z,https://github.com/cxm95/Yanji-Kanban/issues/127
+126,攻击模式转skill,CLOSED,,crawlerwolf,2026-05-07T10:06:37Z,2026-05-27T09:59:23Z,https://github.com/cxm95/Yanji-Kanban/issues/126
+125,学习课题成果验收协助,CLOSED,,crawlerwolf,2026-05-07T09:46:51Z,2026-05-13T09:53:32Z,https://github.com/cxm95/Yanji-Kanban/issues/125
+124,蓝区部署pentagi项目,CLOSED,,pegasus-l;hxb123456,2026-05-07T09:41:23Z,2026-05-11T14:15:39Z,https://github.com/cxm95/Yanji-Kanban/issues/124
+123,拓展shannon的漏洞挖掘能力（选一种漏洞类型）,CLOSED,,Rocky0102;fyf-code,2026-05-07T03:51:22Z,2026-06-03T10:01:07Z,https://github.com/cxm95/Yanji-Kanban/issues/123
+122,攻击模式转skill,CLOSED,,dahanxiangnianshaniu,2026-05-06T10:12:02Z,2026-05-22T10:06:19Z,https://github.com/cxm95/Yanji-Kanban/issues/122
+121,nazhua漏挖能力分析,CLOSED,,Rocky0102;yangjun414,2026-05-06T02:52:52Z,2026-06-03T10:11:18Z,https://github.com/cxm95/Yanji-Kanban/issues/121
+120,开源项目自动复现与评估,OPEN,,pegasus-l,2026-04-29T10:14:43Z,2026-06-24T09:40:15Z,https://github.com/cxm95/Yanji-Kanban/issues/120
+119,服务器运维,CLOSED,,yangjun414,2026-04-29T10:03:19Z,2026-05-07T10:21:27Z,https://github.com/cxm95/Yanji-Kanban/issues/119
+118,通过经验蒸馏技术将原始冗长轨迹转化为精炼知识,OPEN,,cxm95;TongXi-Simon,2026-04-29T06:37:16Z,2026-06-05T09:44:57Z,https://github.com/cxm95/Yanji-Kanban/issues/118
+117,本地红线平台模型适配,CLOSED,,hxb123456,2026-04-28T02:51:16Z,2026-04-28T02:51:28Z,https://github.com/cxm95/Yanji-Kanban/issues/117
+116,整理腾讯安全沙龙胶片照片,CLOSED,,cxm95;TongXi-Simon,2026-04-27T01:29:20Z,2026-04-29T09:59:29Z,https://github.com/cxm95/Yanji-Kanban/issues/116
+115,frps/frpc服务,CLOSED,,pegasus-l,2026-04-24T10:34:15Z,2026-04-29T10:03:29Z,https://github.com/cxm95/Yanji-Kanban/issues/115
+114,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,fyf-code,2026-04-24T03:50:16Z,2026-05-19T01:38:36Z,https://github.com/cxm95/Yanji-Kanban/issues/114
+113,分析余浩工具漏挖过程，从我们的维度分析哪里有问题，看我们的维度设置是否科学,CLOSED,,Rocky0102,2026-04-24T03:36:14Z,2026-05-09T09:35:43Z,https://github.com/cxm95/Yanji-Kanban/issues/113
+112,清华网研院Openday&实践课题发布,CLOSED,,TongXi-Simon,2026-04-24T01:09:02Z,2026-04-24T01:09:05Z,https://github.com/cxm95/Yanji-Kanban/issues/112
+111,学习课题2工具的使用，并编写使用说明报告,CLOSED,,crawlerwolf,2026-04-23T11:15:44Z,2026-05-07T10:01:15Z,https://github.com/cxm95/Yanji-Kanban/issues/111
+110,224服务器A800部署qwen3.6问题排查,CLOSED,,yangjun414,2026-04-23T07:45:53Z,2026-05-09T10:07:46Z,https://github.com/cxm95/Yanji-Kanban/issues/110
+109,k8s KAG数据移植,CLOSED,,TongXi-Simon,2026-04-23T02:30:12Z,2026-04-23T02:30:14Z,https://github.com/cxm95/Yanji-Kanban/issues/109
+108,蓝区5台服务器的数据盘和docker配置,CLOSED,,yangjun414,2026-04-22T03:01:41Z,2026-04-29T10:02:18Z,https://github.com/cxm95/Yanji-Kanban/issues/108
+107,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,pegasus-l,2026-04-22T01:48:57Z,2026-05-09T10:01:50Z,https://github.com/cxm95/Yanji-Kanban/issues/107
+106,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,hxb123456,2026-04-21T06:07:15Z,2026-05-06T10:39:50Z,https://github.com/cxm95/Yanji-Kanban/issues/106
+105,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,zengshan333,2026-04-20T06:17:29Z,2026-05-11T02:26:51Z,https://github.com/cxm95/Yanji-Kanban/issues/105
+104,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,OPEN,,TongXi-Simon,2026-04-20T06:17:15Z,2026-04-28T09:38:45Z,https://github.com/cxm95/Yanji-Kanban/issues/104
+103,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,dahanxiangnianshaniu,2026-04-20T06:16:50Z,2026-05-07T09:46:12Z,https://github.com/cxm95/Yanji-Kanban/issues/103
+102,通过阅读源码+本地搭建测试的方法，学习CAO项目：https://github.com/awslabs/cli-agent-orchestrator，输出分析和测试报告,CLOSED,,crawlerwolf,2026-04-20T06:16:20Z,2026-05-07T10:01:33Z,https://github.com/cxm95/Yanji-Kanban/issues/102
+101,蓝区代理服务器问题排查,CLOSED,,fyf-code;yangjun414,2026-04-20T06:13:17Z,2026-06-03T03:11:57Z,https://github.com/cxm95/Yanji-Kanban/issues/101
+100,从绿区机房搬5台服务器到蓝区,CLOSED,,Rocky0102;fyf-code;yangjun414,2026-04-20T05:55:22Z,2026-04-21T12:47:32Z,https://github.com/cxm95/Yanji-Kanban/issues/100
+99,opencode思考过程工具调用内容完整导出,CLOSED,,cxm95;TongXi-Simon,2026-04-20T02:53:05Z,2026-04-20T06:18:10Z,https://github.com/cxm95/Yanji-Kanban/issues/99
+98,glm5.1和qwen3.6-32b/gemma-4等模型差距,OPEN,,cxm95,2026-04-17T10:06:20Z,2026-04-17T10:06:20Z,https://github.com/cxm95/Yanji-Kanban/issues/98
+97,看cybergym例子，poc为啥没触发漏洞,OPEN,,cxm95;TongXi-Simon,2026-04-17T09:56:20Z,2026-04-27T11:16:32Z,https://github.com/cxm95/Yanji-Kanban/issues/97
+96,绿区H100部署qwen3.6模型,CLOSED,,yangjun414,2026-04-17T05:59:54Z,2026-04-23T02:33:59Z,https://github.com/cxm95/Yanji-Kanban/issues/96
+95,红线平台试用支撑,CLOSED,,cxm95;pegasus-l;hxb123456;yangjun414,2026-04-15T10:59:15Z,2026-05-08T09:30:21Z,https://github.com/cxm95/Yanji-Kanban/issues/95
+94,GLM5.1跑cybergym用例,CLOSED,,cxm95;TongXi-Simon,2026-04-15T06:10:03Z,2026-04-17T09:50:42Z,https://github.com/cxm95/Yanji-Kanban/issues/94
+93,扩展skill应用场景，挖掘实际项目中漏洞,CLOSED,,TongXi-Simon;zengshan333,2026-04-13T06:24:05Z,2026-05-07T10:18:08Z,https://github.com/cxm95/Yanji-Kanban/issues/93
+92,蓝区虚拟机环境准备,CLOSED,,fyf-code,2026-04-13T02:37:00Z,2026-05-08T08:45:34Z,https://github.com/cxm95/Yanji-Kanban/issues/92
+91,在华为云服务器上搭建OpenSandBox环境并研究其能力和机制,CLOSED,,Rocky0102;fyf-code,2026-04-13T02:02:58Z,2026-04-23T02:12:52Z,https://github.com/cxm95/Yanji-Kanban/issues/91
+90,在华为云服务器上搭建shannon测试环境,CLOSED,,Rocky0102;fyf-code,2026-04-13T01:59:47Z,2026-04-17T09:24:49Z,https://github.com/cxm95/Yanji-Kanban/issues/90
+89,红线业务模型移植到223——qwen3-32b模型移植,CLOSED,,yangjun414,2026-04-10T09:24:33Z,2026-04-10T10:37:57Z,https://github.com/cxm95/Yanji-Kanban/issues/89
+88,Benchmarker：数据层新数据源（google osv）,CLOSED,,Rocky0102;fyf-code,2026-04-10T03:26:18Z,2026-04-10T10:07:51Z,https://github.com/cxm95/Yanji-Kanban/issues/88
+87,SecInsight外部使用支撑,CLOSED,,fyf-code,2026-04-10T01:45:36Z,2026-04-15T06:29:35Z,https://github.com/cxm95/Yanji-Kanban/issues/87
+86,红线平台模型适配,CLOSED,,pegasus-l;hxb123456,2026-04-09T12:06:22Z,2026-04-29T05:50:13Z,https://github.com/cxm95/Yanji-Kanban/issues/86
+85,红线业务模型移植到223——jina-code-embeddings-1.5b嵌入模型移植,CLOSED,,yangjun414,2026-04-09T08:28:17Z,2026-04-10T10:35:36Z,https://github.com/cxm95/Yanji-Kanban/issues/85
+84,扩展skill应用场景，挖掘实际项目中漏洞,CLOSED,,TongXi-Simon;hxb123456,2026-04-09T01:43:12Z,2026-04-23T02:24:58Z,https://github.com/cxm95/Yanji-Kanban/issues/84
+83,红线业务模型移植到223——m3e-base嵌入模型移植,CLOSED,,yangjun414,2026-04-08T09:56:36Z,2026-04-10T10:37:43Z,https://github.com/cxm95/Yanji-Kanban/issues/83
+82,搭建 cybergym 测试环境,CLOSED,,cxm95;TongXi-Simon,2026-04-08T07:49:14Z,2026-04-17T09:49:25Z,https://github.com/cxm95/Yanji-Kanban/issues/82
+81,扩展skill应用场景，挖掘实际项目中漏洞,CLOSED,,cxm95;TongXi-Simon,2026-04-08T07:13:46Z,2026-04-17T09:49:06Z,https://github.com/cxm95/Yanji-Kanban/issues/81
+80,扩展skill应用场景，挖掘实际项目中漏洞,OPEN,,pegasus-l,2026-04-08T07:12:44Z,2026-04-08T07:12:44Z,https://github.com/cxm95/Yanji-Kanban/issues/80
+79,扩展skill应用场景，挖掘实际项目中漏洞,CLOSED,,dahanxiangnianshaniu,2026-04-08T07:11:54Z,2026-04-17T05:52:53Z,https://github.com/cxm95/Yanji-Kanban/issues/79
+78,扩展skill应用场景，挖掘项目中漏洞,CLOSED,,cxm95;pegasus-l,2026-04-08T03:42:39Z,2026-04-23T02:28:38Z,https://github.com/cxm95/Yanji-Kanban/issues/78
+77,测试gemma和minimax模型的效果,CLOSED,,yangjun414,2026-04-07T11:51:53Z,2026-04-08T04:48:37Z,https://github.com/cxm95/Yanji-Kanban/issues/77
+76,CAO支持远程Agent调度能力,CLOSED,,cxm95,2026-04-07T09:40:15Z,2026-04-23T02:38:10Z,https://github.com/cxm95/Yanji-Kanban/issues/76
+75,自进化算法poc,OPEN,,cxm95,2026-04-07T09:37:28Z,2026-05-20T04:34:58Z,https://github.com/cxm95/Yanji-Kanban/issues/75
+74,尝试构建环境，验证漏洞是否存在,CLOSED,,Rocky0102;crawlerwolf,2026-04-03T10:18:45Z,2026-05-07T10:00:58Z,https://github.com/cxm95/Yanji-Kanban/issues/74
+73,研究尝试在GPU和NPU上部署google/gemma-4-31B-it模型,CLOSED,,yangjun414,2026-04-03T07:44:20Z,2026-04-08T10:46:19Z,https://github.com/cxm95/Yanji-Kanban/issues/73
+72,研究尝试在GPU和NPU上部署google/gemma-4-31B-it模型,OPEN,,yangjun414,2026-04-03T07:43:39Z,2026-04-03T07:43:39Z,https://github.com/cxm95/Yanji-Kanban/issues/72
+69,统计红线平台误报率,CLOSED,,crawlerwolf;pegasus-l;dahanxiangnianshaniu,2026-04-02T12:58:55Z,2026-04-07T09:36:42Z,https://github.com/cxm95/Yanji-Kanban/issues/69
+68,红线业务所需模型全部移到223,OPEN,,yangjun414,2026-04-02T12:18:35Z,2026-04-02T12:22:45Z,https://github.com/cxm95/Yanji-Kanban/issues/68
+67,224部署MiniMax-M2.5,CLOSED,,yangjun414,2026-04-02T12:17:07Z,2026-04-08T06:19:44Z,https://github.com/cxm95/Yanji-Kanban/issues/67
+66,绿区jumper蓝区主机,CLOSED,,Rocky0102,2026-04-02T01:32:09Z,2026-04-02T05:56:30Z,https://github.com/cxm95/Yanji-Kanban/issues/66
+65,编写skill挖掘相关漏洞,OPEN,,yangjun414,2026-04-01T07:13:07Z,2026-04-01T07:13:07Z,https://github.com/cxm95/Yanji-Kanban/issues/65
+64,编写skill挖掘相关漏洞,CLOSED,,cxm95;TongXi-Simon,2026-04-01T07:11:37Z,2026-04-08T07:13:33Z,https://github.com/cxm95/Yanji-Kanban/issues/64
+63,编写skill挖掘相关漏洞,CLOSED,,cxm95;pegasus-l,2026-04-01T07:11:22Z,2026-04-08T12:25:45Z,https://github.com/cxm95/Yanji-Kanban/issues/63
+62,编写skill挖掘相关漏洞,CLOSED,,cxm95;TongXi-Simon;hxb123456,2026-04-01T07:07:51Z,2026-04-08T09:41:25Z,https://github.com/cxm95/Yanji-Kanban/issues/62
+61,编写skill挖掘相关漏洞,CLOSED,,TongXi-Simon;zengshan333,2026-04-01T07:03:34Z,2026-04-13T06:23:34Z,https://github.com/cxm95/Yanji-Kanban/issues/61
+60,Benchmarker：数据层支持github以外的代码仓,OPEN,,,2026-03-31T12:11:01Z,2026-03-31T12:11:01Z,https://github.com/cxm95/Yanji-Kanban/issues/60
+59,Benchmarker：评估反馈层调用漏挖工具的自进化模块,OPEN,,,2026-03-31T03:28:03Z,2026-03-31T03:28:03Z,https://github.com/cxm95/Yanji-Kanban/issues/59
+58,Benchmarker：评估反馈层对漏挖结果进行分析评估,OPEN,,,2026-03-31T03:24:55Z,2026-03-31T03:24:55Z,https://github.com/cxm95/Yanji-Kanban/issues/58
+57,Benchmarker：任务执行层对漏挖工具进行测试,OPEN,,,2026-03-31T03:21:06Z,2026-03-31T03:21:06Z,https://github.com/cxm95/Yanji-Kanban/issues/57
+56,Benchmarker：样本构造层支持测试集合构造,CLOSED,,Rocky0102,2026-03-31T03:16:22Z,2026-04-21T08:57:40Z,https://github.com/cxm95/Yanji-Kanban/issues/56
+55,Benchmarker：漏挖工具管理,OPEN,,,2026-03-31T03:13:24Z,2026-03-31T03:13:24Z,https://github.com/cxm95/Yanji-Kanban/issues/55
+54,Benchmarker：数据层漏洞版本计算,OPEN,,,2026-03-31T03:07:34Z,2026-03-31T03:07:34Z,https://github.com/cxm95/Yanji-Kanban/issues/54
+53,Benchmarker：样本构造层真值评估,CLOSED,,Rocky0102,2026-03-31T03:04:57Z,2026-04-21T08:57:27Z,https://github.com/cxm95/Yanji-Kanban/issues/53
+52,Benchmarker：数据层新数据源开发（CVE-genie中的CVE_List5）,OPEN,,Rocky0102;fyf-code,2026-03-31T02:59:51Z,2026-04-09T12:39:44Z,https://github.com/cxm95/Yanji-Kanban/issues/52
+50,Benchmarker: 数据层数据清洗,CLOSED,,Rocky0102;yangjun414,2026-03-31T02:56:40Z,2026-04-10T10:09:04Z,https://github.com/cxm95/Yanji-Kanban/issues/50
+49,尽快复现搭建 OpenSpace,CLOSED,,cxm95;TongXi-Simon,2026-03-30T03:07:23Z,2026-04-03T10:17:12Z,https://github.com/cxm95/Yanji-Kanban/issues/49
+48,编写skill尝试挖掘该漏洞,CLOSED,,Rocky0102;dahanxiangnianshaniu,2026-03-28T01:41:11Z,2026-04-08T07:11:36Z,https://github.com/cxm95/Yanji-Kanban/issues/48
+47,毅丰把169服务器的docker环境恢复一下,CLOSED,,fyf-code,2026-03-28T00:07:13Z,2026-06-18T06:08:54Z,https://github.com/cxm95/Yanji-Kanban/issues/47
+46,配合向博将KAG数据转换到md到插入知识图谱的过程在k8s上调通,CLOSED,,hxb123456;jialongZhang1999,2026-03-25T06:52:28Z,2026-04-28T03:20:15Z,https://github.com/cxm95/Yanji-Kanban/issues/46
+45,编写skill挖掘类似漏洞,CLOSED,,cxm95;crawlerwolf;pegasus-l,2026-03-25T03:49:09Z,2026-04-03T10:18:00Z,https://github.com/cxm95/Yanji-Kanban/issues/45
+44,日报刷新规范，每日刷新In Progress/Review的任务进展,OPEN,,,2026-03-24T07:50:15Z,2026-03-24T09:44:36Z,https://github.com/cxm95/Yanji-Kanban/issues/44
+43,红区模型部署,CLOSED,,zengshan333;jialongZhang1999;yangjun414,2026-03-24T06:09:17Z,2026-04-03T10:13:29Z,https://github.com/cxm95/Yanji-Kanban/issues/43
+42,每个月建新kanban project,CLOSED,,cxm95,2026-03-24T02:25:27Z,2026-03-24T09:38:13Z,https://github.com/cxm95/Yanji-Kanban/issues/42
+41,Benchmark漏洞环境自动搭建,OPEN,,Rocky0102,2026-03-24T00:43:48Z,2026-03-24T00:43:48Z,https://github.com/cxm95/Yanji-Kanban/issues/41
+40,构建Benchmark自进化能力。,OPEN,FIRST PRIORITY,Rocky0102,2026-03-24T00:41:17Z,2026-05-07T10:18:16Z,https://github.com/cxm95/Yanji-Kanban/issues/40
+39,在蓝区linux服务器上，搭建一个shadowsocks服务器，供大家蓝区电脑访问google,CLOSED,,dahanxiangnianshaniu;fyf-code,2026-03-23T14:28:07Z,2026-03-30T03:11:26Z,https://github.com/cxm95/Yanji-Kanban/issues/39
+38,红线平台协同建设规划（DDL updated 3.29）,CLOSED,FIRST PRIORITY,cxm95,2026-03-23T10:54:16Z,2026-04-02T05:57:10Z,https://github.com/cxm95/Yanji-Kanban/issues/38
+37,看一下yingkun那边上周四的洞察，涉及了哪些skill进化的工作，和我们的进展一起写个summary,CLOSED,,TongXi-Simon;Rocky0102,2026-03-23T10:41:46Z,2026-03-31T06:20:14Z,https://github.com/cxm95/Yanji-Kanban/issues/37
+36,CVE Genies，蓝区环境搭建,CLOSED,,Rocky0102;yangjun414,2026-03-23T09:16:46Z,2026-04-02T05:55:13Z,https://github.com/cxm95/Yanji-Kanban/issues/36
+35,Agent自进化框架,CLOSED,FIRST PRIORITY,cxm95,2026-03-23T09:14:10Z,2026-04-03T01:45:39Z,https://github.com/cxm95/Yanji-Kanban/issues/35
+34,自动化漏洞验证（OH）端到端，发现poc生成问题，提出自更新方案,CLOSED,FIRST PRIORITY,cxm95,2026-03-23T09:13:08Z,2026-04-03T01:48:33Z,https://github.com/cxm95/Yanji-Kanban/issues/34
+32,发送东莞三楼蓝区设备邮件,CLOSED,,cxm95,2026-03-23T08:13:42Z,2026-03-24T06:34:04Z,https://github.com/cxm95/Yanji-Kanban/issues/32
+31,完成漏洞学习writeup一篇，讲解漏洞原理-yangjun,CLOSED,,pegasus-l;yangjun414,2026-03-23T04:57:40Z,2026-04-01T13:05:28Z,https://github.com/cxm95/Yanji-Kanban/issues/31
+30,完成漏洞学习writeup一篇，讲解漏洞原理-zhangjialong,OPEN,,jialongZhang1999,2026-03-23T04:57:36Z,2026-03-31T10:34:24Z,https://github.com/cxm95/Yanji-Kanban/issues/30
+29,完成漏洞学习writeup一篇，讲解漏洞原理-xitong,CLOSED,,cxm95;TongXi-Simon,2026-03-23T04:57:32Z,2026-04-02T05:57:02Z,https://github.com/cxm95/Yanji-Kanban/issues/29
+28,完成漏洞学习writeup一篇，讲解漏洞原理-huangminjie,CLOSED,,crawlerwolf;pegasus-l,2026-03-23T04:57:28Z,2026-04-02T01:29:51Z,https://github.com/cxm95/Yanji-Kanban/issues/28
+27,完成漏洞学习writeup一篇，讲解漏洞原理-huangxiangbo,CLOSED,,pegasus-l;hxb123456,2026-03-23T04:57:24Z,2026-04-01T07:07:15Z,https://github.com/cxm95/Yanji-Kanban/issues/27
+26,完成漏洞学习writeup一篇，讲解漏洞原理-zengshan,CLOSED,,TongXi-Simon;zengshan333,2026-03-23T04:57:20Z,2026-04-01T07:03:16Z,https://github.com/cxm95/Yanji-Kanban/issues/26
+25,完成漏洞学习writeup一篇，讲解漏洞原理-liuqi,CLOSED,,TongXi-Simon;pegasus-l,2026-03-23T04:57:16Z,2026-04-01T07:12:05Z,https://github.com/cxm95/Yanji-Kanban/issues/25
+24,完成漏洞学习writeup一篇，讲解漏洞原理-fengyifeng,CLOSED,,TongXi-Simon;fyf-code,2026-03-23T04:57:12Z,2026-04-01T07:05:06Z,https://github.com/cxm95/Yanji-Kanban/issues/24
+23,完成漏洞学习writeup一篇，讲解漏洞原理-chenjune,CLOSED,,Rocky0102;dahanxiangnianshaniu,2026-03-23T04:57:08Z,2026-03-30T02:12:22Z,https://github.com/cxm95/Yanji-Kanban/issues/23
+22,漏洞学习理解仓库环境构建（C++）,CLOSED,,cxm95,2026-03-23T04:57:05Z,2026-03-23T08:57:04Z,https://github.com/cxm95/Yanji-Kanban/issues/22
+21,漏洞学习理解仓库环境构建（javaweb）,CLOSED,,Rocky0102,2026-03-23T04:57:01Z,2026-03-24T01:49:20Z,https://github.com/cxm95/Yanji-Kanban/issues/21
+20,蓝区服务器与LLM API分发,OPEN,,cxm95;Rocky0102,2026-03-23T04:56:57Z,2026-03-24T00:37:15Z,https://github.com/cxm95/Yanji-Kanban/issues/20
+18,红线所有模型 take down，利用所有可用卡部署 Qwen3.5-397B-A17B 或 glm5,CLOSED,,yangjun414,2026-03-22T15:31:50Z,2026-04-17T09:57:18Z,https://github.com/cxm95/Yanji-Kanban/issues/18
+17,讲解培训opencode漏洞挖掘skill,CLOSED,,Rocky0102,2026-03-22T15:23:38Z,2026-03-23T07:47:56Z,https://github.com/cxm95/Yanji-Kanban/issues/17
+16,刷新当前研几实验室的所有算力与模型的表格,CLOSED,,yangjun414,2026-03-22T15:18:28Z,2026-03-23T10:43:10Z,https://github.com/cxm95/Yanji-Kanban/issues/16
+14,Backlog Task #9,CLOSED,,,2026-03-22T14:55:26Z,2026-03-22T15:21:28Z,https://github.com/cxm95/Yanji-Kanban/issues/14
+13,Backlog Task #8,CLOSED,,,2026-03-22T14:55:23Z,2026-03-22T15:21:25Z,https://github.com/cxm95/Yanji-Kanban/issues/13
+12,Backlog Task #7,CLOSED,,cxm95,2026-03-22T14:55:19Z,2026-03-22T15:21:23Z,https://github.com/cxm95/Yanji-Kanban/issues/12
+11,完成任务后，把卡片拖到此列，由reviewer决定任务是否完成并close,OPEN,,,2026-03-22T14:55:15Z,2026-03-23T11:10:57Z,https://github.com/cxm95/Yanji-Kanban/issues/11
+10,Backlog Task #5,CLOSED,,cxm95,2026-03-22T14:55:12Z,2026-03-22T15:21:20Z,https://github.com/cxm95/Yanji-Kanban/issues/10
+9,Backlog Task #4,CLOSED,,cxm95,2026-03-22T14:55:08Z,2026-03-23T07:47:52Z,https://github.com/cxm95/Yanji-Kanban/issues/9
+8,Backlog Task #3,CLOSED,,cxm95,2026-03-22T14:55:05Z,2026-03-22T15:21:18Z,https://github.com/cxm95/Yanji-Kanban/issues/8
+7,Backlog Task #2,CLOSED,,,2026-03-22T14:55:01Z,2026-03-22T15:21:15Z,https://github.com/cxm95/Yanji-Kanban/issues/7
+6,Backlog Task #1,CLOSED,,,2026-03-22T14:52:40Z,2026-03-22T15:21:12Z,https://github.com/cxm95/Yanji-Kanban/issues/6
+5,收集github账号邮箱,CLOSED,,cxm95,2026-03-22T13:49:17Z,2026-03-23T03:19:05Z,https://github.com/cxm95/Yanji-Kanban/issues/5
+4,邀请所有人加入mattermost频道,CLOSED,,cxm95,2026-03-22T13:48:48Z,2026-03-24T09:38:20Z,https://github.com/cxm95/Yanji-Kanban/issues/4
+3,Helllo world again!,OPEN,,,2026-03-22T12:56:04Z,2026-03-22T12:56:04Z,https://github.com/cxm95/Yanji-Kanban/issues/3
+1,Hello World!,OPEN,,,2026-03-22T12:45:56Z,2026-03-22T12:47:47Z,https://github.com/cxm95/Yanji-Kanban/issues/1
